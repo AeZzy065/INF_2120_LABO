@@ -4,7 +4,7 @@ import java.util.Optional;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class Principal_3_1 {
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
@@ -34,9 +34,9 @@ public class Main {
             i++;
         }
         if (i >= a_tableau.length){
-            ouiNonDansTab = new Optional<>();
+            ouiNonDansTab = Optional.empty();
         }else{
-            ouiNonDansTab = new Optional<>(i);
+            ouiNonDansTab = Optional.of(i) ;
         }
         return ouiNonDansTab;
     }
